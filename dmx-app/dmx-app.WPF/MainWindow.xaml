@@ -6,5 +6,5 @@
         xmlns:wpf="clr-namespace:Xamarin.Forms.Platform.WPF;assembly=Xamarin.Forms.Platform.WPF"
         xmlns:local="clr-namespace:dmx_app.WPF"
         mc:Ignorable="d"
-        Title="DMX App" Height="400" Width="400" ResizeMode="NoResize">
+        Title="DMX App" Height="400" Width="450" ResizeMode="NoResize">
 </wpf:FormsApplicationPage>

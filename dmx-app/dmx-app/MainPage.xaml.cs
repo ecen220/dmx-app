@@ -12,12 +12,17 @@ namespace dmx_app
     {
         public List<Channel> Channels = new List<Channel>();
 
+        uDMX dmx;
+
         public MainPage()
         {
-            for (int i = 0; i < 512; i++)
+            dmx = new uDMX();
+
+            for (int i = 1; i <= 512; i++)
             {
                 Channels.Add(new Channel()
                 {
+                    Dmx = dmx,
                     Index = i,
                     Value = 0
                 });
