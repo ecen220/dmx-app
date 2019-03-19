@@ -9,13 +9,13 @@
         <Label Text="Welcome to Xamarin.Forms!" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
-        <ListView x:Name="channels" Rotation="270">
+        <ListView x:Name="channels">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <StackLayout>
+                        <StackLayout WidthRequest="400">
                             <Label Text="{Binding Index}"/>
-                            <Slider Value="{Binding Value}"></Slider>
+                            <Slider Maximum="255" Value="{Binding Value}"></Slider>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
