@@ -100,7 +100,7 @@
     <InterfaceDefinition Include="Main.storyboard" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\dmx-app\dmx-app\dmx-app.csproj">
+    <ProjectReference Include="..\dmx-app\dmx-app.csproj">
       <Project>{7A306874-993F-4C8E-BB1E-923B02259F3E}</Project>
       <Name>dmx-app</Name>
     </ProjectReference>

@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dmx-app", "dmx-app\dmx-app\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dmx-app.WPF", "dmx-app\dmx-app.WPF\dmx-app.WPF.csproj", "{C0F92EFA-B972-412B-AC13-AF6BB4757F33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dmx-app.macos", "dmx-app.macos\dmx-app.macos.csproj", "{5651C067-23CF-4C28-9427-8328B202268A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dmx-app.macos", "dmx-app\dmx-app.macos\dmx-app.macos.csproj", "{5651C067-23CF-4C28-9427-8328B202268A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
