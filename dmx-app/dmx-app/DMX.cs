@@ -46,20 +46,8 @@ namespace dmxapp
         {
             UsbDeviceFinder finder = new UsbDeviceFinder(DMX.vID, DMX.pID);
 
-            _device = UsbDevice.OpenUsbDevice(finder);
-
-            if (_device != null)
-            {
-                // Verify if it's really uDMX
-                if (!(_device.Info.ManufacturerString == MANUFACTURER &&
-                  _device.Info.ProductString == PRODUCT))
-                {
-                    return false;
-
-                }
-                return true;
-            }
-            return false;
+            var reg = UsbDevice.AllDevices.Find(finder);
+            return (reg != null);
 
         }
 
