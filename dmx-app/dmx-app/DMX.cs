@@ -4,7 +4,7 @@ using LibUsbDotNet.Main;
 
 namespace dmxapp
 {
-    public class DMX
+    public class DMX : IDisposable
     {
         /// Manufacturer string in USB device
         public static string MANUFACTURER = "www.anyma.ch";
