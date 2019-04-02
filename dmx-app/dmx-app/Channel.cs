@@ -6,7 +6,7 @@ namespace dmxapp
 {
     public class Channel : INotifyPropertyChanged
     {
-        public uDMX Dmx {get; set; }
+        public DMX Dmx {get; set; }
         public int Index { get; set; }
         private int channel;
 

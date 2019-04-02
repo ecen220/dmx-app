@@ -12,9 +12,9 @@ namespace dmxapp.macos
         NSWindow _window;
         public AppDelegate()
         {
-            var style = NSWindowStyle.Closable | NSWindowStyle.Resizable | NSWindowStyle.Titled;
+            var style = NSWindowStyle.Closable | NSWindowStyle.Titled;
 
-            var rect = new CoreGraphics.CGRect(200, 1000, 1025, 768);
+            var rect = new CoreGraphics.CGRect(0, 0, 350, 700);
             _window = new NSWindow(rect, style, NSBackingStore.Buffered, false);
             _window.Title = "Xamarin.Forms on Mac!";
             _window.TitleVisibility = NSWindowTitleVisibility.Hidden;
