@@ -9,7 +9,7 @@ namespace dmx_app
 {
     public partial class App : Application
     {
-        DMX DMX;
+        DMX dmx;
         public List<Channel> Channels = new List<Channel>();
         Page CurrentPage = Page.Connect;
 
@@ -24,13 +24,13 @@ namespace dmx_app
             InitializeComponent();
 
 
-            DMX = new DMX();
+            dmx = new DMX();
 
             for (int i = 1; i <= 512; i++)
             {
                 Channels.Add(new Channel()
                 {
-                    Dmx = DMX,
+                    Dmx = dmx,
                     Index = i,
                     Value = 0,
                 });
@@ -43,7 +43,7 @@ namespace dmx_app
             if (DMX.ScanForDMX())
             {
                 CurrentPage = Page.Channel;
-                MainPage = new ChannelPage(DMX, Channels);
+                MainPage = new ChannelPage(dmx, Channels);
             }
 
             Device.StartTimer(TimeSpan.FromSeconds(1), () =>
@@ -55,19 +55,19 @@ namespace dmx_app
                     if (CurrentPage == Page.Connect)
                     {
                         CurrentPage = Page.Channel;
-                        MainPage = new ChannelPage(DMX, Channels);
+                        MainPage = new ChannelPage(dmx, Channels);
                     }
-                   
+
                 }
                 else
                 {
                     if (CurrentPage == Page.Channel)
                     {
-                        CurrentPage = Page.Connect; 
+                        CurrentPage = Page.Connect;
                         MainPage = new ConnectPage();
                     }
                 }
-       
+
 
 
 
@@ -84,7 +84,7 @@ namespace dmx_app
 
         protected override void OnSleep()
         {
-            // Handle when your app sleeps
+            dmx.Dispose();
         }
 
         protected override void OnResume()
