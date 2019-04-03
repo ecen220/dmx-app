@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="dmxapp.ConnectPage">
+<ContentPage Title="Connect" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="dmxapp.ConnectPage">
     <ContentPage.Content>
     <StackLayout>
-        <Label Text="Please connect the DMX light" 
+        <Label Text="Please connect the uDMX adapter" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
     </StackLayout>
