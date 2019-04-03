@@ -17,6 +17,7 @@ namespace dmxapp.GTK
             var window = new FormsWindow();
             window.LoadApplication(app);
             window.SetApplicationTitle("DMX app");
+            window.SetDefaultSize(200, 800);
             window.Show();
 
             Gtk.Application.Run();
